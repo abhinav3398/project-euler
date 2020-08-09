@@ -1,0 +1,1 @@
+multiples_of_3n5(n::Int) = sum(i for i ∈ 1:n-1 if ((i % 3) == 0 || (i % 5) == 0))
