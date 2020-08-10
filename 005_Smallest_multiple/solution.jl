@@ -1,0 +1,1 @@
+smallest_multiple(n) = lcm(1:n)
