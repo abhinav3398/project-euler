@@ -1,0 +1,1 @@
+factorial_digit_sum(n) = n |> BigInt |> factorial |> digits |> sum
