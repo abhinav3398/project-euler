@@ -33,12 +33,14 @@ How many `DAYOFWEEK` fell on the first of each month during the `_start::Date` t
 
 # Examples
 ```
-julia> counting_days_on_1st_month_naieve(14)
+julia> counting_days_on_1st_month_efficient(14)
 171
 ```
 """
 function counting_days_on_1st_month_efficient(DAYOFWEEK::Int, _start = Date(1901, 1, 1), _end = Date(2000, 12, 31))
+    # todo #19: improve counting_days_on_1st_month_efficient
     years = Year(_end) - Year(_start) + Year(1)
+    remaining_days = _end - _start
     total_months = years.value*12
     daysinweek = 7
     (total_months ÷ daysinweek) + (dayofweek(_start) == DAYOFWEEK)
