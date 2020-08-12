@@ -1,0 +1,1 @@
+power_digit_sum(n) = BigInt(2)^n |> digits |> sum
