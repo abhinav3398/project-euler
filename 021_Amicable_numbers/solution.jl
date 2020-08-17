@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 using Primes: factor
 
+=======
+>>>>>>> 6dc0b954494c78fa028c20c0b7683346a26f999e
 SumOfProperDivisors(n) = SumOfDivisors(n) - n
 
 # https://mathschallenge.net/index.php?section=faq&ref=number/sum_of_divisors
@@ -24,6 +27,7 @@ function SumOfDivisors(n::T) where T <: Integer
     s
 end
 
+<<<<<<< HEAD
 function SumOfDivisors_naieve(n::T) where T <: Integer
     s = 1
     factors = factor(n)
@@ -34,6 +38,8 @@ function SumOfDivisors_naieve(n::T) where T <: Integer
     s
 end
 
+=======
+>>>>>>> 6dc0b954494c78fa028c20c0b7683346a26f999e
 @inline function get_amicable_number_if_possible(a)
      b = SumOfProperDivisors(a)
      return (SumOfProperDivisors(b) == a && a != b) ? b : -1
