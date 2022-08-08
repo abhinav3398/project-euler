@@ -1,0 +1,1 @@
+self_powers(n) = sum(big(i)^i for i in 1:n)
